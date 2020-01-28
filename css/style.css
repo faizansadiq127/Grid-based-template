@@ -193,6 +193,9 @@ body::-webkit-scrollbar-thumb {
   padding: 5rem 2rem;
   display: grid;
   align-items: flex-end; }
+  @media only screen and (max-width: 75em) {
+    .rightside {
+      padding: .2rem 2rem; } }
   .rightside__content {
     margin-top: 5rem;
     text-align: justify;
@@ -200,7 +203,7 @@ body::-webkit-scrollbar-thumb {
     @media only screen and (max-width: 75em) {
       .rightside__content {
         text-align: center;
-        padding: 2rem 15rem; } }
+        padding: 1rem 15rem; } }
     .rightside__content h3 {
       font-size: 3rem; }
     .rightside__content p {
