@@ -36,6 +36,16 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--grey-light-color-2);
   outline: 4px solid var(--grey-light-color-1); }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield; }
+
 .container {
   display: grid;
   grid-template-areas: "main rightside" "footer frightside";
@@ -116,7 +126,7 @@ body::-webkit-scrollbar-thumb {
       font-size: 2.8rem;
       letter-spacing: .5rem;
       transition: all .2s;
-      width: 55%;
+      width: 60%;
       border-bottom: 2px solid #505050;
       font-weight: bold; }
     .main__contacts-dial input:focus,
@@ -178,6 +188,7 @@ body::-webkit-scrollbar-thumb {
           letter-spacing: .5rem;
           transition: all .2s;
           border-bottom: 2px solid #505050;
+          width: 110%;
           font-weight: bold;
           background-color: #cfcfcf; }
           @media only screen and (max-width: 65em) {
