@@ -39,7 +39,7 @@
             <div class="main__contacts-dial">
                 <div class="main__contacts-padding">
                 <span>personnumber :</span>
-                <input type="tel" id="phone" placeholder="(123) 45-7" />
+                <input type="number" id="phone" placeholder="(123) 45-7" min="0" step="1"/>
             </div>
             </div>
 
@@ -66,7 +66,7 @@
                 <div class="main__conDetail-padding1">
                     <span>mobile number:</span><br>
                     <div class="main__conDetail-form--icons">
-                        <input type="text" placeholder="00 3339">
+                        <input type="number" id="phone2" placeholder="(123) 45-7" min="0" step="1"/>
                         <svg class="main__conDetail-form--icons---icon">
                             <use xlink:href="img/sprite.svg#icon-pencil"></use>
                         </svg>
@@ -86,15 +86,20 @@
                         <span>PST 700 E</span>
                     </div>
                     <div class="top__item-no">
-                        <svg class="top__item-no--icon">
-                            <use xlink:href="img/sprite.svg#icon-circle-with-plus"></use>
-                        </svg>
-                        <span>1st</span>
-                        <svg class="top__item-no--icon">
-                            <use xlink:href="img/sprite.svg#icon-circle-with-minus"></use>
-                        </svg>
+                        <button onclick="incrementValue()">
+                            <svg class="top__item-no--icon">
+                                <use xlink:href="img/sprite.svg#icon-circle-with-plus"></use>
+                            </svg>
+                        </button>
+                        <input type="text" id="number" value="1">
+
+                        <button onclick="fremove()">
+                            <svg class="top__item-no--icon">
+                                <use xlink:href="img/sprite.svg#icon-circle-with-minus"></use>
+                            </svg>
+                        </button>
                     </div>
-                    <div class="top__item-price">599 kr</div>
+                    <div class="top__item-price" id="product-price"></div>
                 </div>
                 <div class="top__item">
                     <img class="top__item-img" src="img/bosch.png" alt="" srcset="">
@@ -103,15 +108,20 @@
                         <span>10-delars sticksgblad tra/metall</span>
                     </div>
                     <div class="top__item-no">
-                        <svg class="top__item-no--icon">
-                            <use xlink:href="img/sprite.svg#icon-circle-with-plus"></use>
-                        </svg>
-                        <span>1st</span>
-                        <svg class="top__item-no--icon">
-                            <use xlink:href="img/sprite.svg#icon-circle-with-minus"></use>
-                        </svg>
+                        <button onclick="add()">
+                            <svg class="top__item-no--icon">
+                                <use xlink:href="img/sprite.svg#icon-circle-with-plus"></use>
+                            </svg>
+                        </button>
+                        <input type="text" id="number1" value="1">
+
+                        <button onclick="remove()">
+                            <svg class="top__item-no--icon">
+                                <use xlink:href="img/sprite.svg#icon-circle-with-minus"></use>
+                            </svg>
+                        </button>
                     </div>
-                    <div class="top__item-price">599 kr</div>
+                    <div class="top__item-price" id="price"></div>
                 </div>
             </div>
             <div class="mid"></div>
@@ -199,9 +209,11 @@
     <div class="frightside">
         <div class="frightside__icons">
             <span>bestall</span>
-            <svg class="frightside__icons-icon">
-                <use xlink:href="img/sprite.svg#icon-chevron-with-circle-right"></use>
-            </svg>
+            <a href="#" >
+                <svg class="frightside__icons-icon">
+                    <use xlink:href="img/sprite.svg#icon-chevron-with-circle-right"></use>
+                </svg>
+            </a>
         </div>
     </div>
 
@@ -209,9 +221,11 @@
     <footer class="footer">
         <div class="footer__back">
             <div class="footer__back-icons">
-                <svg class="footer__back-icons--icon">
-                    <use xlink:href="img/sprite.svg#icon-undo2"></use>
-                </svg>
+                <a href="#">
+                    <svg class="footer__back-icons--icon">
+                        <use xlink:href="img/sprite.svg#icon-undo2"></use>
+                    </svg>
+                </a>
                 <span>Fortsatt handla</span>
             </div>
         </div>
