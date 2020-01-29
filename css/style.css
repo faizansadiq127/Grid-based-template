@@ -183,6 +183,9 @@ body::-webkit-scrollbar-thumb {
           @media only screen and (max-width: 65em) {
             .main__conDetail-form--icons input {
               background-color: #ffffff; } }
+          @media only screen and (max-width: 37.5em) {
+            .main__conDetail-form--icons input {
+              font-size: 1.8rem; } }
         .main__conDetail-form--icons span {
           font-size: 3rem;
           padding: 0rem 1rem;
